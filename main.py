@@ -22,14 +22,14 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6704766609:AAGPn4ABZ4OEyhAA1w9yJTSmTuxjazTABKE",
+             bot_token= "6847252444:AAFZbFjrQ7H-6cGNlvi2Z6TyhfaLpBilUBc",
              api_id= 22609670,
              api_hash= "3506d8474ad1f4f5e79b7c52a5c3e88d")
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /tiger")
+    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /Aarya")
 
 
 @bot.on_message(filters.command("stop"))
@@ -39,7 +39,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["tuktuk"]))
+@bot.on_message(filters.command(["GWAR"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Send TXT file for download')
     input: Message = await bot.listen(editable.chat.id)
@@ -200,13 +200,13 @@ async def account_login(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading failed tiger **\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
+                    f"**downloading failed baby **\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
                 )
                 continue
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("Done")
+    await m.reply_text("⚡Done⚡")
 
 
 bot.run()

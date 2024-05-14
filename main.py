@@ -22,7 +22,7 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "7028957545:AAFx3_K3l-MDObw-Ps6_Y5_TH0ylUgq5ShE",
+             bot_token= "6938906448:AAEx4hfABwin49MKyNsJW3MgYqx4PupWvDQ",
              api_id= 22609670,
              api_hash= "3506d8474ad1f4f5e79b7c52a5c3e88d")
 
@@ -39,7 +39,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["GWAR"]))
+@bot.on_message(filters.command(["KING"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Send TXT file for download')
     input: Message = await bot.listen(editable.chat.id)
